@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Fortune Teller!</h1>
+    <form action="/home" method="POST">
+        <label for="birth_month">Enter your birth month:</label>
+        <input type="text" id="birth_month" name="birth_month" required>
+        <button type="submit" value="submit">Tell my fortune</button>
+    </form>
+</body>
+</html>
