@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fortune</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Your fortune is:</h1>
+    <p>{{ fortune }}</p>
+    <a href="/home">Back to home</a>
+</body>
+</html>

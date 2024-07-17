@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: yellow;
+}
+
+p {
+    font-size: 1.2em;
+    color:blue ;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
