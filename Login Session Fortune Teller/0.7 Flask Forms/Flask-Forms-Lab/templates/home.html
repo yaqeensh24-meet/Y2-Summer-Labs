@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: skyblue;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: yellow;
+}
+
+p {
+    font-size: 1.2em;
+    color:blue ;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: yellow;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: lightblue;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+</style>
+<title>home</title>
+<body>
+    <h1>Welcome, {{ name }}!</h1>
+    <p>Click the button below to discover your fortune.</p>
+    <form method="POST" action="{{ url_for('fortune') }}">
+        <button type="submit">Tell your fortune</button>
+    </form>
+</body>
+</html>
