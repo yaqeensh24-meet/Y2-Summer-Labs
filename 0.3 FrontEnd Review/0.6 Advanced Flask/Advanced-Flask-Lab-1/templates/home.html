@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-     <style>
+    <style>
         body {
     font-family: Arial, sans-serif;
     background-color: skyblue;
@@ -28,14 +28,11 @@ a {
 }
 </style>
     <title>Home</title>
-    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">-->
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/style.css"> -->
 </head>
 <body>
     <h1>Welcome to the Fortune Teller!</h1>
-    <form method="POST" action="/home">
-        <label for="birth_month">Enter your birth month:</label>
-        <input type="text" id="birth_month" name="birth_month">
-        <button type="submit">Tell my fortune</button>
-    </form>
+    <p>Click the link below to discover your fortune.</p>
+    <a href="/fortune">Tell your fortune</a>
 </body>
 </html>

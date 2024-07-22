@@ -1,0 +1,15 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Display Quotes</title>
+</head>
+<body>
+    <h1>Submitted Quotes</h1>
+    <ul>
+        {% for quote in quotes %}
+            <li>"{{ quote['quote'] }}" - {{ quote['speaker'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/home">Back to home</a>
+</body>
+</html>

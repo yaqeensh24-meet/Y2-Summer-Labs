@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>quote teller</title>
+</head>
+<body>
+
+	<h1>The quote :</h1>
+	<h3>{{quote}}<</h3>
+
+	<form action="{{url_for('display')}}" method = "GET">
+		<input type="submit" value="display quotes">
+	</form>
+	<form action="{{url_for('home')}}" method = "GET">
+		<input type="submit" value="home">
+	</form>
+
+
+
+
+</body>

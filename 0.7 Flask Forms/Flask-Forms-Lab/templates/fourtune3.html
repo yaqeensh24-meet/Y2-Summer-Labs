@@ -27,15 +27,12 @@ a {
     border-radius: 5px;
 }
 </style>
-    <title>Home</title>
-    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">-->
+    <title>Fortune</title>
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
 </head>
 <body>
-    <h1>Welcome to the Fortune Teller!</h1>
-    <form method="POST" action="/home">
-        <label for="birth_month">Enter your birth month:</label>
-        <input type="text" id="birth_month" name="birth_month">
-        <button type="submit">Tell my fortune</button>
-    </form>
+    <h1>Your fortune is: {{ fortune }}</h1>
+    <p>your birth month is {{birth_month}}</p>
+    <a href="/home">Back to home</a>
 </body>
 </html>
