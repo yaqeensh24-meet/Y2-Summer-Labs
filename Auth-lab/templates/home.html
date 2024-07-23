@@ -1,18 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>qoute teller</title>
+    <title>Home</title>
 </head>
 <body>
-    <form aciton = '{{url_for("home")}}' method = 'POST' >
-        <input type="text" name = "quote" placeholder="quote">
-        <input type="text" name = "speaker" placeholder="speaker">
-        <input type="submit" value="submit">
+    <h1>Welcome to the Home Page</h1>
+    <form method="post" action="/home">
+        <input type="text" name="quote" placeholder="Type your quote here" required>
+        <input type="text" name="said_by" placeholder="Who said this?" required>
+        <button type="submit">Submit Quote</button>
     </form>
-    <form action="{{url_for('signOut')}}" method = "GET">
-        <input type="submit" value="Sign out">
+    <form action="/sign-out" method="post">
+        <button type="submit">Sign Out</button>
     </form>
-
-
-
 </body>
+</html>

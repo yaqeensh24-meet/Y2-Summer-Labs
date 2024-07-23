@@ -1,15 +1,15 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Display Quotes</title>
 </head>
 <body>
-    <h1>Submitted Quotes</h1>
+    <h1>Quotes</h1>
     <ul>
-        {% for quote in quotes %}
-            <li>"{{ quote['quote'] }}" - {{ quote['speaker'] }}</li>
+        {% for key, quote in quotes.items() %}
+            <li>"{{ quote['text'] }}" - {{ quote['said_by'] }}</li>
         {% endfor %}
     </ul>
-    <a href="/home">Back to home</a>
+    <a href="/home">Back to Home</a>
 </body>
 </html>

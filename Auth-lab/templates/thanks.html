@@ -1,21 +1,11 @@
  <!DOCTYPE html>
 <html>
 <head>
-	<title>quote teller</title>
+    <title>Thank You</title>
 </head>
 <body>
-
-	<h1>The quote :</h1>
-	<h3>{{quote}}<</h3>
-
-	<form action="{{url_for('display')}}" method = "GET">
-		<input type="submit" value="display quotes">
-	</form>
-	<form action="{{url_for('home')}}" method = "GET">
-		<input type="submit" value="home">
-	</form>
-
-
-
-
+    <h1>Thank You for Submitting a Quote!</h1>
+    <a href="/home">Submit Another Quote</a>
+    <a href="/display">View Quotes</a>
 </body>
+</html>
