@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Habit Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+    </header>
+    <nav>
+        <a href="{{ url_for('profile') }}">Profile</a>
+        <a href="{{ url_for('logout') }}">Logout</a>   
+        <a href="{{ url_for('add_habit') }}">Add habit</a> 
+    </nav>
+    <main class="dashboard">
+        <h2>Your Habits</h2>
+        <ul>
+            {% for key, habit in habits.items() %}
+                <li>
+                    <h1>Habit:</h1>
+                    <h3>{{ habit['name'] }}</h3>
+                    <h1>Description:</h1>
+                    <h3>{{ habit['describtion'] }}</h3>
+                    <br/>
+                    <form action="/dashboard" method="POST">
+                        <input type="hidden" name="key" value="{{ key }}">
+                        <button type="submit">I did the habit today!!</button>
+                        <h4>Counter: {{ habit['counter'] }}</h4>
+                    </form>
+                </li>
+                <hr>
+                <br/>
+            {% endfor %}
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; 2024 Habit Tracker</p>
+    </footer>
+</body>
+</html>

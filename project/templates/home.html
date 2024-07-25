@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Habit Tracker</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+        <main>
+        <h2>Welcome to Habit Tracker!</h2>
+        <p>Build and maintain good habits with ease.</p>
+    </main>
+    </header>
+    <nav>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('signup') }}">Signup</a>
+    </nav>
+    <footer>
+        <p>&copy; 2024 Habit Tracker</p>
+    </footer>
+</body>
+</html>

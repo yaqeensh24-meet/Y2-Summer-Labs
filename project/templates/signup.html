@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Habit Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Singup-Habit Tracker</h1>
+    </header>
+    <main>
+        <form action="/signup" method="post">
+            <h2>Signup</h2>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" required>
+            <label for="password">user_name:</label>
+            <input type="text" name="user_name" required>
+            <label for="password">name:</label>
+            <input type="text" name="name" required>
+            <button>Signup</button>
+        </form>
+        <a href="{{ url_for('login') }}">Already have an account? Login here</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Habit Tracker</p>
+    </footer>
+</body>
+</html>

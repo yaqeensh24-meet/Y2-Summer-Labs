@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile - Habit Tracker</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Habit Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Habit Tracker</h1>
+    </header>
+    <main class="profile">
+        <h2>User Profile</h2>
+        <form method="post">
+            <h3>Email:</h3>
+            <input type="email" name="email" value="{{ user_data.email }}" disabled>
+             <h3>Name:</h3>
+            <input type="text" name="name" value="{{ profile_data.name }}" disabled>
+             <h3>User name:</h3>
+            <input type="texr" name="user_name" value="{{ profile_data.username }}" disabled>
+        </form>
+        <br/>
+        <br/>
+        <hr>
+        <nav>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+    </main>
+    <footer>
+        <p>&copy; 2024 Habit Tracker</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
